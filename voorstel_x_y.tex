@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.1 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) 
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Adaptation: Jens Buysse
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[fleqn,10pt]{voorstel}
+
+\usepackage[english,dutch]{babel}
+
+\usepackage{lipsum}
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,111,184} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color1,citecolor=color2,linkcolor=color2,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Hogeschool Gent} % Journal information
+\Archive{Onderzoekstechnieken 2016 - 2017} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{Titel voorstel} % Article title
+
+\Authors{Jens Buysse\textsuperscript{1}*, Anita Bernard\textsuperscript{1}, Bert Van Vreckem\textsuperscript{1}} % Authors
+\affiliation{\textsuperscript{1}\textit{Vakgroep Informatica, Faculteit Bedrijf en Organisatie, Valentin Vaerwyckweg 1, 9000 Gent}} % Author affiliation
+\affiliation{*\textbf{Contact}: jens.buysse@hogent.be} % Corresponding author
+
+% Sleutelwoorden:
+%
+% Het eerste sleutelwoord beschrijft het onderzoeksdomein dat je kan kiezen uit deze
+% lijst:
+%
+% - Mobiele applicatieontwikkeling
+% - Webapplicatieontwikkeling
+% - Applicatieontwikkeling (andere)
+% - Systeem- en netwerkbeheer
+% - Mainframe
+% - E-business
+% - Databanken en big data
+% - Machine learning en kunstmatige intelligentie
+% - Andere (specifieer)
+%
+% De andere sleutelwoorden zijn vrij te kiezen
+
+\Keywords{Onderzoeksdomein. Keyword1 --- Keyword2 --- Keyword3} % Keywords
+\newcommand{\keywordname}{Sleutelwoorden} % Defines the keywords heading name
+
+
+\Abstract{Hier schrijf je de samenvatting van uw voorstel. Wat hier zeker in moet vermeld worden (in tekststijl, niet in bulletsyle):
+\begin{enumerate}
+	\item \textbf{Context}:  Waarom is dit werk belangrijk?
+	\item \textbf{Nood} :  Waarom moet dit onderzocht worden?
+	\item \textbf{Taak}:  Wat ga je (ongeveer) doen?
+	\item \textbf{Object}: Wat staat in dit document geschreven?
+	\item \textbf{Resultaat}: Wat verwacht je van je onderzoek?
+	\item \textbf{Conclusie}: Wat verwacht je van van de conclusies?
+	\item \textbf{Perspectief}: Wat zegt de toekomst voor dit werk?
+\end{enumerate}
+
+Bij de sleutelwoorden geef je het onderzoeksdomein, samen met andere sleutelwoorden die je werk beschrijven.
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+
+%\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introductie} % The \section*{} command stops section numbering
+Hier introduceer je uw werk. Je hoeft hier nog niet te technisch te gaan.
+
+Je beschrijft zeker
+\begin{itemize}
+	\item de probleemstelling en context
+	\item de motivatie en relevantie voor het onderzoek
+	\item de doelstelling en onderzoeksvraag/-vragen
+\end{itemize}
+
+%------------------------------------------------
+
+\section{State-of-the-art}
+Hier beschrijf je de state of the art rondom uw werk (dit kan bijvoorbeeld een literatuurstudie zijn - je mag dus deze sectie ook aanpassen). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze?
+Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek? Denk zeker goed na welke werken
+je refereert en waarom. Je mag gerust gebruik maken van subsecties hierin.
+
+%------------------------------------------------
+
+\section{Methode van aanpak}
+Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+
+\section{Verwachte resultaten}
+Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+
+\section{Verwachte conclusies}
+Hier beschrijf je wat je verwacht uit uw onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit uw onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypotheses niet overeenkomen met de resultaten.
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+\phantomsection
+\bibliographystyle{apa}
+\bibliography{biblio}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
